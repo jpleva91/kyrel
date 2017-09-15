@@ -1,0 +1,67 @@
+1. turn_3rd_cell_blue
+
+function main () {
+  moveRight();
+  moveRight();
+  useBlue();
+  draw();
+}
+
+
+2. erase_3rd_cell
+
+function main () {
+  for (var i = 0; i < initial_state.length; i++) {
+    useBlue();
+    draw();
+    moveRight();
+  }
+
+  moveLeft();
+  moveLeft();
+  erase();
+}
+
+3. every_other_erase
+
+function main () {
+  for (var i = 0; i < initial_state.length; i++) {
+    useBlue();
+    draw();
+    moveRight();
+  }
+
+  for (var i = 0; i < initial_state.length; i++) {
+    if(i % 2 === 1) {
+      erase();
+    }
+    moveLeft();
+  } 
+}
+
+4. every_other_blue
+
+function main () {
+  useGreen();
+  draw();
+  moveRight();
+  draw();
+  moveRight();
+  draw();
+  moveRight();
+  moveRight();
+
+  for (var i = 0; i < initial_state.length; i++) {
+    if(i % 2 === 1) {
+    useBlue();
+    draw();
+    }
+    moveLeft();
+  } 
+}
+
+5. move_start_to_finish
+
+function main () {
+	
+}

@@ -29,7 +29,32 @@ function main(n) {
   ////                          ////
   //////////////////////////////////
 
+  useGreen();
+  draw();
 
+  if(initial_state[0].onGreen() === true) {
+    erase();
+    moveRight();
+    moveRight();
+    moveRight();
+    moveRight();
+    useBlue();
+    draw();
+  } else if (initial_state[0].onGreen() === true) {
+    erase();
+    moveRight();
+    moveRight();
+    moveRight();
+    moveRight(); 
+    useGreen();
+    draw();  
+  } else {
+    erase();
+    moveRight();
+    moveRight();
+    moveRight();
+    moveRight();     
+  }
 
   //////////////////////////////////
   ////                          ////
